@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumato — Casas en barrios cerrados de Zona Norte</title>
+<meta name="description" content="Lumato. Ricardo Alejandro Zapata, arquitecto. Proyecto, dirección de obra y preproyecto de casas en barrios cerrados de Zona Norte, Buenos Aires.">
+<meta property="og:title" content="Lumato — Arquitectura en Zona Norte">
+<meta property="og:description" content="Casas que se terminan cuando entra la luz.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#EDEDEB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231B1B19'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='17' fill='%23EDEDEB' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#vision">Ir al contenido</a>
+
+<nav class="pill" aria-label="Secciones">
+  <a href="#vision" class="pill__brand">Lumato</a>
+  <span class="pill__dot" aria-hidden="true"></span>
+  <a href="#mapa">Mapa</a>
+  <span class="pill__dot" aria-hidden="true"></span>
+  <a href="#servicios">Qué hago</a>
+  <span class="pill__dot" aria-hidden="true"></span>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+
+  <!-- ─────────── 01 · VISIÓN ─────────── -->
+  <section class="vision" id="vision" aria-labelledby="vision-title">
+    <div class="vision__bg" aria-hidden="true"></div>
+
+    <div class="vision__inner">
+      <div class="vision__head">
+        <h1 class="vision__title" id="vision-title">
+          Lumato.<br>
+          <span>Casas que se terminan cuando entra la luz.</span>
+        </h1>
+        <div class="vision__intro">
+          <p class="vision__sub">
+            Diseño y construyo casas en una amplia zona del norte de Buenos Aires.
+            La luz se decide antes que el material.
+          </p>
+        </div>
+      </div>
+
+      <div class="vision__meta">
+        <span>Ricardo Alejandro Zapata — Arquitecto</span>
+        <span id="meta-base">Zona Norte, Buenos Aires</span>
+      </div>
+
+      <div class="strip" id="strip" aria-label="Obras recientes"></div>
+    </div>
+  </section>
+
+  <!-- ─────────── 02 · MAPA ─────────── -->
+  <section class="mapa" id="mapa" aria-labelledby="mapa-title">
+    <div class="mapa__head">
+      <h2 class="mapa__title" id="mapa-title">La huella.</h2>
+      <p class="mapa__sub" id="mapa-sub">—</p>
+    </div>
+
+    <div class="mapa__canvas" id="mapa-canvas">
+      <div id="map" role="application" aria-label="Mapa de obras en Zona Norte"></div>
+
+      <button class="mapa__reset" id="map-reset" type="button">Ver todas</button>
+
+      <div class="ecosystem" id="ecosystem" aria-hidden="true"></div>
+
+      <noscript><p class="mapa__fallback">Activá JavaScript para ver el mapa.</p></noscript>
+    </div>
+
+    <p class="mapa__hint">Tocá un punto y se abre su carpeta de fotos. Tocá una foto para ampliarla.</p>
+  </section>
+
+  <!-- ─────────── 03 · QUÉ HAGO ─────────── -->
+  <section class="servicios" id="servicios" aria-labelledby="servicios-title">
+    <div class="servicios__inner">
+      <div class="servicios__head">
+        <h2 class="servicios__title" id="servicios-title">Qué hago.</h2>
+        <p class="servicios__sub">Del terreno a la entrega. Un solo responsable.</p>
+      </div>
+      <ol class="servicios__list" id="servicios-list"></ol>
+    </div>
+  </section>
+
+  <!-- ─────────── 04 · CONTACTO ─────────── -->
+  <section class="contacto" id="contacto" aria-labelledby="contacto-title">
+    <h2 class="contacto__title" id="contacto-title">
+      ¿Tenés el <span>terreno</span>?
+    </h2>
+    <p class="contacto__sub">Contame dónde está y qué te imaginás. Empezamos por ahí.</p>
+
+    <div class="contacto__box">
+      <form class="form" id="form-contacto">
+        <label class="form__field">
+          <span>Nombre</span>
+          <input type="text" name="nombre" autocomplete="name" placeholder="Tu nombre">
+        </label>
+        <label class="form__field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" placeholder="tu@email.com" required>
+        </label>
+        <label class="form__field">
+          <span>Barrio o localidad</span>
+          <input type="text" name="barrio" placeholder="Dónde está el terreno">
+        </label>
+        <label class="form__field form__field--full">
+          <span>Mensaje</span>
+          <textarea name="mensaje" rows="3" placeholder="Contame un poco el proyecto"></textarea>
+        </label>
+        <div class="form__actions">
+          <button class="form__submit" type="submit">Escribir</button>
+          <p class="form__note" id="form-note">Se abre tu mail con el mensaje ya armado.</p>
+        </div>
+      </form>
+
+      <div class="contacto__side">
+        <span class="contacto__side-label">O directo</span>
+        <ul class="contacto__links">
+          <li><a id="link-mail" href="#">—</a></li>
+          <li><a id="link-wa" href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a id="link-ig" href="#" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>© <span id="year">2026</span> Lumato</span>
+  <span class="foot__credit">Diseño y criterio — TALLER.ZZ</span>
+</footer>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/map.js"></script>
+</body>
+</html>

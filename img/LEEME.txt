@@ -1,0 +1,15 @@
+FOTOS DE OBRA — una carpeta por casa
+
+  originales (OneDrive / ARQ_ZAPATA):
+  buquebus, casa-barrancas, casa-el-aromo, estancias-golf-164,
+  casa-newman, casa-vitelli, san-matias, estancias-golf-166
+
+  nuevas (Google Drive / obras):
+  golf-164-b, casa-cabildo-1, casa-cabildo-2, casa-barrancas-b,
+  casa-barbarita, casa-san-eduardo, casa-la-pionera
+
+Dentro de cada carpeta: 01.jpg, 02.jpg, ... en orden.
+Optimizadas a 1600 px de ancho, JPG progresivo, calidad 78.
+
+Las fotos se declaran en assets/js/data.js con fotos("nombre", cantidad).
+El carrusel muestra UNA foto por obra y el cartel "Tocar para ver más".

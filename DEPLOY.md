@@ -1,12 +1,13 @@
 # Subir a GitHub y publicar en Vercel
 
-Versión **sin sección de mensajes**. Cuando tengas las capturas, pasate a
-la carpeta `LUMATO-WEB`, que ya trae esa sección prearmada.
+Versión **final**, sin sección de mensajes. Si más adelante querés sumar
+capturas de clientes, la sección se puede volver a armar; por ahora no
+está incluida en esta entrega.
 
 No hice commit ni push. Los archivos están en:
 
 ```
-C:\Users\zapat\Desktop\LUMATO-WEB-SIN-MENSAJES
+C:\Users\zapat\Desktop\LUMATO-WEB-FINAL
 ```
 
 El sitio es estático: no hay build, no hay npm, no hay variables de entorno.
@@ -16,9 +17,9 @@ El sitio es estático: no hay build, no hay npm, no hay variables de entorno.
 ## 1. Crear el repositorio en GitHub
 
 1. Entrar a github.com → **New repository**.
-2. Nombre sugerido: `lumato-web-sin-mensajes`.
+2. Nombre sugerido: `lumato-web-final`.
 3. Dejarlo **vacío**: sin README, sin `.gitignore`, sin licencia.
-4. Copiar la URL que aparece (`https://github.com/TU-USUARIO/lumato-web-sin-mensajes.git`).
+4. Copiar la URL que aparece (`https://github.com/TU-USUARIO/lumato-web-final.git`).
 
 ---
 
@@ -29,11 +30,11 @@ por línea (no usar `&&`):
 
 ```powershell
 $git = "C:\Users\zapat\AppData\Local\GitHubDesktop\app-3.5.6\resources\app\git\cmd\git.exe"
-Set-Location "C:\Users\zapat\Desktop\LUMATO-WEB-SIN-MENSAJES"
+Set-Location "C:\Users\zapat\Desktop\LUMATO-WEB-FINAL"
 & $git init
 & $git add .
 & $git commit -m "Lumato landing"
-& $git remote add origin https://github.com/TU-USUARIO/lumato-web-sin-mensajes.git
+& $git remote add origin https://github.com/TU-USUARIO/lumato-web-final.git
 & $git branch -M main
 & $git push -u origin main
 ```
@@ -46,14 +47,14 @@ Si ya existe un repo y solo querés actualizar, saltá a `add`, `commit` y
 ## 3. Conectar Vercel
 
 1. Entrar a vercel.com → **Add New…** → **Project**.
-2. **Import Git Repository** → elegir `lumato-web-sin-mensajes`.
+2. **Import Git Repository** → elegir `lumato-web-final`.
 3. Configuración:
    - Framework Preset: **Other**
    - Build Command: **vacío**
    - Output Directory: **vacío**
    - Root Directory: **`./`**
    - Install Command: **vacío**
-4. **Deploy**. Queda online en `https://lumato-web-sin-mensajes-....vercel.app`.
+4. **Deploy**. Queda online en `https://lumato-web-final-....vercel.app`.
 
 Ya incluí un `vercel.json` mínimo, así que no hace falta agregar nada.
 
@@ -89,7 +90,7 @@ Vercel vuelve a publicar solo, en unos segundos.
 
 ## 6. Alternativa sin GitHub
 
-Arrastrar la carpeta `LUMATO-WEB-SIN-MENSAJES` completa a la pestaña **Deploy** de
+Arrastrar la carpeta `LUMATO-WEB-FINAL` completa a la pestaña **Deploy** de
 Vercel. Sirve para probar, pero para actualizar hay que volver a subir
 todo.
 

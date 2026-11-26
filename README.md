@@ -2,8 +2,8 @@
 
 Landing de una sola página. Cuatro bloques: visión, mapa, qué hago y contacto.
 
-Versión **sin sección de mensajes**. Para la versión con testimonios, usar
-la carpeta `LUMATO-WEB`.
+Versión **final**. Sin sección de mensajes: se descartó para mantener
+el recorrido reducido a visión, mapa, qué hago y contacto.
 Sin build, sin dependencias instaladas, sin costo mensual.
 
 ## Archivos
@@ -54,13 +54,13 @@ Ver `DEPLOY.md` para el paso a paso con GitHub. Resumen abajo.
 **Opción rápida (sin GitHub):**
 
 1. Entrar a vercel.com → *Add New…* → *Project*.
-2. Pestaña *Deploy* → arrastrar la carpeta `LUMATO-WEB-SIN-MENSAJES` completa.
+2. Pestaña *Deploy* → arrastrar la carpeta `LUMATO-WEB-FINAL` completa.
 3. Deploy. Queda online en un dominio `.vercel.app`.
 
 **Opción con GitHub** (recomendada para actualizar sin reemplazar todo):
 
 1. Crear un repositorio nuevo.
-2. Subir el contenido de `LUMATO-WEB-SIN-MENSAJES` (no la carpeta, los archivos).
+2. Subir el contenido de `LUMATO-WEB-FINAL` (no la carpeta, los archivos).
 3. En Vercel: *Import Git Repository*, framework **Other**,
    build command vacío, output directory vacío.
 4. Cada cambio en `data.js` se publica solo.

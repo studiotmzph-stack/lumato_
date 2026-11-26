@@ -1,6 +1,6 @@
 # Lumato — estado y pendientes
 
-Sitio: `C:\Users\zapat\Desktop\LUMATO-WEB-SIN-MENSAJES\`
+Sitio: `C:\Users\zapat\Desktop\LUMATO-WEB-FINAL\`
 Versión sin sección de mensajes.
 Bloques: visión · mapa · qué hago · contacto.
 
